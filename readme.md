@@ -51,8 +51,9 @@ myIH.InternalElement.Append ("Ie1");
 ```c#
 using Aml.Engine.AmlObjects;
 using Aml.Engine.CAEX;
+using Aml.Engine.CAEX.Extensions;
 
-var caexDocument = CAEXDocument.New_CAEXDocument();
+var caexDocument = CAEXDocument.New_CAEXDocument(CAEXDocument.CAEXSchema.CAEX2_15);
 
 // adds the base libraries to the document
 AutomationMLInterfaceClassLibType.InterfaceClassLib(caexDocument);
